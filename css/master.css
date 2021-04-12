@@ -1,0 +1,33 @@
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 160%;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 90%;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+img {
+  height: 130px;
+  width: 130px;
+}
+
+#mapid { height: 300px; }

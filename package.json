@@ -1,0 +1,23 @@
+{
+  "name": "dingsbums-web",
+  "version": "0.0.1",
+  "description": "Official web client for Dingsbums",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yue-dongchen/dingsbums-web.git"
+  },
+  "author": "岳東辰",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/yue-dongchen/dingsbums-web/issues"
+  },
+  "homepage": "https://github.com/yue-dongchen/dingsbums-web#readme",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "leaflet": "^1.7.1"
+  }
+}
