@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1 id="item-name">Loading...</h1>
+    <p id="item-description"></p>
+    <div class="location">
+      <p id="item-coordinates"></p>
+    </div>
+    <script type="text/javascript">
+      // setTimeout(function() {
+      //   document.getElementById('item-name').innerHTML = 'Name';
+      //   document.getElementById('item-description').innerHTML = 'description';
+      // }, 2000);
+
+      var title = document.getElementById('item-name');
+      var description = document.getElementById('item-description');
+      var coordinates = document.getElementById('item-coordinates');
+
+      const query_string = window.location.search;
+      console.log(query_string);
+      const params = new URLSearchParams(query_string);
+      const id = params.get('id');
+      fetch(`http://localhost:3000/items/${id}`)
+        .then((response) => {
+          return response.json();
+        })
+        .then((myJson) => {
+          console.log(myJson);
+
+          document.title = myJson.name + ' | Dingsbums';
+          title.innerHTML = myJson.name;
+          description.innerHTML = myJson.description;
+          coordinates.innerHTML = myJson.coordinates;
+        });
+    </script>
+  </body>
+</html>

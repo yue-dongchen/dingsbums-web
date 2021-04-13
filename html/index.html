@@ -17,6 +17,12 @@
       <option value="">5 km</option>
     </select>
     <br>
-    <button type="button" name="search">Search</button>
+    <script type="text/javascript">
+      function search() {
+        console.log(document.getElementById('item-search').value);
+        window.location = `http://localhost:8080/results?keywords=${document.getElementById('item-search').value}`;
+      }
+    </script>
+    <button type="button" name="search" onclick="search()">Search</button>
   </body>
 </html>

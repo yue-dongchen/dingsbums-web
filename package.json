@@ -4,7 +4,8 @@
   "description": "Official web client for Dingsbums",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/yue-dongchen/dingsbums-web#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "http-server": "^0.12.3",
     "leaflet": "^1.7.1"
   }
