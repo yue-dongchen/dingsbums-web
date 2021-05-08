@@ -8,6 +8,7 @@ const query_string = window.location.search;
 console.log(query_string);
 const params = new URLSearchParams(query_string);
 const query = params.get('keywords');
+document.title = `Search "${query}" | Dingsbums`;
 fetch(`http://localhost:3000/items/search?keywords=${query}`)
   .then((response) => {
     return response.json();
@@ -22,5 +23,4 @@ fetch(`http://localhost:3000/items/search?keywords=${query}`)
         <br>${item.description}
         `);
     })
-    // console.log(myJson[0].coordinates);
   });
